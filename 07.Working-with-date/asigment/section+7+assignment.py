@@ -18,6 +18,7 @@ twentyeleven= twentyeleven.drop_duplicates()
 #   get the week , to get the day of the week, the month and the year from invoice date column.
 
 twentyeleven.info()
+
 twentyeleven['InvoiceDate']=pd.to_datetime(twentyeleven['InvoiceDate'])
 twentyeleven['week']= twentyeleven['InvoiceDate'].dt.week
 
